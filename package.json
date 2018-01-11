@@ -1,0 +1,39 @@
+{
+  "name": "mongodb-igniter",
+  "version": "0.0.1",
+  "description": "A declarative MongoDB initializer",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test-ts": "ts-node ./test-ts/test.ts",
+    "test-js": "node ./test-js/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obsessiveprogrammer/mongodb-igniter.git"
+  },
+  "keywords": [
+    "mongodb",
+    "collection",
+    "index",
+    "document",
+    "initialize",
+    "promise"
+  ],
+  "author": "Tom Bonanno <tbonanno231@gmail.com> (https://obsessiveprogrammer.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/obsessiveprogrammer/mongodb-igniter/issues"
+  },
+  "homepage": "https://github.com/obsessiveprogrammer/mongodb-igniter#readme",
+  "dependencies": {
+    "mongodb": "^2.2.34",
+    "@types/mongodb": "^2.2.18"
+  },
+  "devDependencies": {
+    "ts-node": "^4.1.0",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.2"
+  }
+}
