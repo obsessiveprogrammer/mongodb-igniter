@@ -13,8 +13,8 @@ async function testInitializeDb(dbDeclaration) {
 		collectionInitializationResults.forEach(collectionInitializationResult => {
 			console.log(`Initialized collection "${collectionInitializationResult.collectionName}"`);
 
-			if (collectionInitializationResult.indexInitializationResults) {
-				collectionInitializationResult.indexInitializationResults.forEach(indexNames => console.log(`Initialized index "${indexNames}" in collection "${collectionInitializationResult.collectionName}"`));
+			if (collectionInitializationResult.indexNames) {
+				collectionInitializationResult.indexNames.forEach(indexNames => console.log(`Initialized index "${indexNames}" in collection "${collectionInitializationResult.collectionName}"`));
 			}
 
 			if (collectionInitializationResult.documentInitializationResults) {
