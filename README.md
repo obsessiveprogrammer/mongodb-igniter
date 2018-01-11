@@ -1,4 +1,6 @@
 # mongodb-igniter
+
+[![Join the chat at https://gitter.im/mongodb-igniter/Lobby](https://badges.gitter.im/mongodb-igniter/Lobby.svg)](https://gitter.im/mongodb-igniter/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 A declarative MongoDB initializer
 
 [![NPM](https://nodei.co/npm/mongodb-igniter.png)](https://nodei.co/npm/mongodb-igniter/)
