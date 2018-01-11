@@ -1,6 +1,8 @@
 # mongodb-igniter
 A declarative MongoDB initializer
 
+[![NPM](https://nodei.co/npm/mongodb-igniter.png)](https://nodei.co/npm/mongodb-igniter/)
+
 ## Description
 The purpose of `mongodb-igniter` is to provide an easy way to initialize your application's baseline MongoDB database content from a declarative object format using Node.js.  It maximizes the use of Node.js's async capabilities to process the initialization very quickly, and returns all results in a neatly organized array of objects.  Both the DB declaration and results object formats leverage the MongoDB native driver object types, for simplicity.  It can initiate its own MongoDB connection, or use an existing one.  The module source is written in TypeScript and exposes all relevant types for consumption by IDEs and/or the TypeScript language.
 

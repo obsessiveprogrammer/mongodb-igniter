@@ -29,6 +29,7 @@ npm-debug.log
 testem.log
 /typings
 yarn-error.log
+.npmignore
 /dist
 
 # System Files
