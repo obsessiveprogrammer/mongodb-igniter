@@ -5,17 +5,17 @@ export const dbConnection: Promise<Db> = MongoClient.connect('mongodb://localhos
 
 // Close the connection to the MongoDB server if the app terminates or restarts
 async function closeMongoDbConnection(event: string): Promise<void> {
-	const db: Db = await dbConnection;
-	await db.close();
-	console.log(`MongoDB connection closed on ${event}`);
+    const db: Db = await dbConnection;
+    await db.close();
+    console.log(`MongoDB connection closed on ${event}`);
 }
 
 process.on('SIGINT', async () => {
-	await closeMongoDbConnection('app termination');
-	process.exit(0);
+    await closeMongoDbConnection('app termination');
+    process.exit(0);
 });
 
 process.on('SIGUSR2', async () => {
-	await closeMongoDbConnection('app restart');
-	process.kill(process.pid, 'SIGUSR2');
+    await closeMongoDbConnection('app restart');
+    process.kill(process.pid, 'SIGUSR2');
 });
